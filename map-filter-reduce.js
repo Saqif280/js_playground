@@ -44,6 +44,10 @@ let animal_names = animals.map((animal, index, animals) => {
   return animal.name;
 });
 
+// or
+
+let animal_names = animals.map((animal, index, animals) => animal.name );
+
 // --------------------
 // --- MAP FUNCTION ---
 // --------------------
@@ -68,6 +72,10 @@ let small_animals = animals.filter((animal) => {
   return animal.size === 'small'; // must return boolean of current item
 });
 
+// or
+
+let small_animals = animals.filter((animal) => animal.size === 'small');
+
 // --------------------
 // --- REDUCE FUNCTION ---
 // --------------------
@@ -90,3 +98,7 @@ let small_animals = animals.filter((animal) => {
 let total_weight = animals.reduce((weight, animal, index, animals) => {
   return weight += animal.weight
 });
+
+// or
+
+let total_weight = animals.reduce((weight, animal, index, animals) => weight += animal.weight );
